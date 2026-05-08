@@ -1,3 +1,5 @@
+https://github.com/Tosha00/zakrivayuschiy-teg-f
+
 # Проектная работа «Закрывающий тег»
 
 ## Описание проекта
@@ -37,4 +39,4 @@
 
 ## Запуск проекта
 
-[Откройте файл `index.html` в браузере.](https://tosha00.github.io/zakrivayuschiy-teg-f/)
+https://tosha00.github.io/zakrivayuschiy-teg-f/
