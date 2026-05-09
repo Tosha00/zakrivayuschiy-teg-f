@@ -16,6 +16,7 @@
   font-size: 1.125rem;
   background-image: var(--background-image);
   background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: var(--card-text-weight);
@@ -25,16 +26,15 @@
   display: grid;
   place-items: center;
   margin-bottom: 6.25rem;
-  padding: 1rem;
+  padding: 7.5rem 0.85rem;
   aspect-ratio: 175 / 92;
-  min-block-size: 20.438rem;
 }
 
 .header__title {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  font-family: PressStart2P;
+  font-family: var(--accent-font), fantasy;
   font-size: var(--title-size);
   text-align: center;
   text-transform: uppercase;
@@ -128,7 +128,7 @@
   right: 0;
   opacity: 0.5;
   color: #000;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 0.875rem;
   text-transform: uppercase;
   text-shadow:
@@ -196,7 +196,7 @@
   gap: 8px;
   padding-inline: 17px;
   padding-block: 10px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   background-color: #fff;
 }
@@ -226,10 +226,10 @@
 
 .card__icon-button {
   align-self: stretch;
-  outline: 2px solid transparent;
-  outline-offset: -2px;
+  border: 2px solid transparent;
   font-size: 0;
   transition: border 0.3s ease;
+  height: 100%;
 }
 
 .card__icon-button:focus {
@@ -237,14 +237,14 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid #000;
+  border: 2px solid #000;
 }
 
 .like-icon {
   transform-origin: center;
   cursor: pointer;
-  inline-size: 39px;
-  block-size: 36px;
+  inline-size: 38px;
+  aspect-ratio: 9 / 8;
 }
 
 .like-icon:hover .core {
@@ -338,6 +338,7 @@ dialog {
   padding: 1.875rem;
   transform: translate(0, calc(50vh - 50%));
   max-inline-size: 22.063rem;
+  border: 2px solid #000;
 }
 
 dialog[open] .dialog__text {
