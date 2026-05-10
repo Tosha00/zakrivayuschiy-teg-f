@@ -210,6 +210,12 @@
   aspect-ratio: 1 / 1;
 }
 
+@media (width <= 23.438em) {
+  .text-button__icon {
+    inline-size: 28px;
+  }
+}
+
 .button__text::after {
   content: "";
   position: absolute;
@@ -329,7 +335,6 @@
   .main__button .text-button {
     display: flex;
     flex-direction: column;
-    padding-block: 18px;
     inline-size: 100%;
   }
 }
@@ -364,6 +369,10 @@ dialog::backdrop {
   padding: 0;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.dialog__text .text-button__icon {
+  inline-size: 39px;
 }
 
 .dialog__button,
